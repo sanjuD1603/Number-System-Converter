@@ -1,0 +1,147 @@
+/* Default styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/b.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 251, 251);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background-image: url("images/background.jpg");
+
+    border-radius: 60px;
+    position: relative;
+    top: 200px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  /* Styles for the input fields */
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    align-self: center;
+  }
+  
+  select,
+  input[type="text"] {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    max-width: 200px;
+  }
+  
+  select:focus,
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #3b88fd;
+    box-shadow: 0px 0px 5px rgba(59,136,253,0.5);
+  }
+  
+  /* Styles for the buttons */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4
+  }
+  
+
+  #selectIn {
+    font-size: 18px;
+    padding: 8px;
+    border-width: 5px;
+    border-radius: 4px;
+    border: 1px solid #757070;
+    max-width: 200px;
+  }
+  
+  #selectIn:hover {
+    border-color: #3b88fd;
+  }
+  
+  #selectIn:focus {
+    outline: none;
+    border-color: #3b88fd;
+    box-shadow: 0px 0px 5px rgba(59,136,253,0.5);
+  }
+  
+  .con1
+  {
+position: relative;
+left: 20px;
+  }
+
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #06262f;
+}
+
+.btn:active {
+  background-color: #0077b3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn.animated {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+#btn1{
+    position: relative;
+   left: 110px;
+}
+#btn2{
+    position: relative;
+    left: 120px;
+}
+  

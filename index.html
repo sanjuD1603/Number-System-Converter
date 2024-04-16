@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Number System Converter">
+    <meta name="description" content="Convert any number system to other, like Decimal, Binary, Octal, Hexadecimal.">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Number System Converter</h1>
+
+        <br>
+        <br>
+       
+<div class="con1">
+    <select id="selectIn" onchange="updateLabels()">
+        <hr>
+        <option value="d">Decimal</option>
+        <option value="b">Binary</option>
+        <option value="o">Octal</option>
+        <option value="h">Hexadecimal</option>
+        <hr>
+    </select>
+    <label for="input">Decimal:</label>
+    <input type="text" id="input" placeholder="Enter a number">
+</div>
+        
+<br>
+<br>
+<br>
+<div class="con1">
+        <select id="selectOut" onchange="updateLabels()">
+            <option value="d">Decimal</option>
+            <option value="b">Binary</option>
+            <option value="o">Octal</option>
+            <option value="h">Hexadecimal</option>
+        </select>
+
+        <label for="output">Binary:</label>
+
+        <input type="text" id="output" readonly placeholder="Result">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <button  id="btn1" class="btn" onclick="convert()">Convert</button>
+        <button  id="btn2"class="btn" onclick="reset()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
